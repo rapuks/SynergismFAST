@@ -918,6 +918,11 @@ p#themesTitle {
     margin-bottom: 3px;
 }
 
+.speedupButton {
+    min-width: 65%;
+    margin-bottom: 3px;
+}
+
 div.addCodeBox {
     display: flex;
 }

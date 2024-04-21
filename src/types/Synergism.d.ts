@@ -669,6 +669,7 @@ export interface GlobalVariables {
 
   costDivisor: number
 
+  globalSpeedFactor: number
   freeAccelerator: number
   totalAccelerator: number
   freeAcceleratorBoost: number

@@ -44,8 +44,8 @@ export const addTimers = (input: TimerInput, time = 0) => {
       || input === 'octeracts'
       || input === 'autoPotion'
       || input === 'ambrosia'
-    ? 1
-    : calculateTimeAcceleration().mult
+    ? G.globalSpeedFactor
+    : calculateTimeAcceleration().mult * G.globalSpeedFactor
 
   switch (input) {
     case 'prestige': {

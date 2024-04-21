@@ -51,6 +51,7 @@ import {
   promocodes,
   promocodesInfo,
   promocodesPrompt,
+  speedUpPrompt,
   reloadDeleteGame,
   resetGame,
   updateSaveString
@@ -862,6 +863,7 @@ export const generateEventHandlers = () => {
   DOMCacheGetOrSet('deleteGame').addEventListener('click', () => resetGame())
   DOMCacheGetOrSet('preloadDeleteGame').addEventListener('click', () => reloadDeleteGame())
   DOMCacheGetOrSet('promocodes').addEventListener('click', () => promocodesPrompt())
+  DOMCacheGetOrSet('speedUp').addEventListener('click', () => speedUpPrompt())
   DOMCacheGetOrSet('addCodeBox').addEventListener('mouseover', () => promocodesInfo('add'))
   DOMCacheGetOrSet('addCode').addEventListener('click', () => promocodes('add'))
   DOMCacheGetOrSet('addCodeAll').addEventListener('click', () => promocodes('add', addCodeAvailableUses()))
