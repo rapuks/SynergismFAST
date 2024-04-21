@@ -2238,6 +2238,7 @@ export const calculateTimeAcceleration = () => {
   const timeMult = productContents(preCorruptionArr)
     * productContents(corruptionArr)
     * productContents(postCorruptionArr)
+    * G.globalSpeedFactor
 
   if (player.usedCorruptions[3] >= 6 && player.achievements[241] < 1) {
     achievementaward(241)

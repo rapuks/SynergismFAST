@@ -922,7 +922,7 @@ export const player: Player = {
   autoTesseracts: [false, false, false, false, false, false],
 
   saveString: 'Synergism-$VERSION$-$TIME$.txt',
-  exporttest: !testing,
+  exporttest: true,
 
   dayCheck: null,
   dayTimer: 0,
@@ -1643,7 +1643,7 @@ const loadSynergy = async () => {
     })
 
     if (data && testing) {
-      data.exporttest = false
+      data.exporttest = true
     }
   }
 

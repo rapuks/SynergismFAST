@@ -3,7 +3,7 @@ import i18next from 'i18next'
 import { type IBlueberryData, updateLoadoutHoverClasses } from './BlueberryUpgrades'
 import { BlueberryUpgrade, blueberryUpgradeData } from './BlueberryUpgrades'
 import { calculateMaxRunes, calculateTimeAcceleration } from './Calculate'
-import { testing } from './Config'
+// import { testing } from './Config'
 import { WowCubes, WowHypercubes, WowPlatonicCubes, WowTesseracts } from './CubeExperimental'
 import {
   AbyssHepteract,
@@ -968,10 +968,11 @@ export const checkVariablesOnLoad = (data: PlayerSave) => {
 
   // in old versions of the game (pre 2.5.0), the import function will only work
   // if this variable = "YES!". Don't ask Platonic why.
+  // force to nong
   if (typeof data.exporttest === 'string') {
-    player.exporttest = !testing
+    player.exporttest = true
   } else {
-    player.exporttest = !!data.exporttest
+    player.exporttest = true
   }
 
   const shop = data.shopUpgrades as LegacyShopUpgrades | Player['shopUpgrades']
