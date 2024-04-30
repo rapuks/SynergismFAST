@@ -17,6 +17,7 @@ jobs:
       with:
         apiToken: ${{ secrets.CF_API_TOKEN }}
         accountId: 'bd22ac056a23329365c8a57927490701'
+	accounEmail: '168423246+rapuks@users.noreply.github.com'
         project: 'synergism'
         # Add this if you want GitHub Deployments (see below)
         githubToken: ${{ secrets.API_TOKEN_GITHUB }}
