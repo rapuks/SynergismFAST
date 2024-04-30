@@ -964,7 +964,6 @@ export const promocodes = async (input: string | null, amount?: number) => {
 
 export const speedUpPrompt = async () => {
   const el = DOMCacheGetOrSet('speedUp')
-  const input = prompt("Custom Global Speed Factor", G.globalSpeedFactor.toString());
   const numericInput = 1000000;
   if (!isNaN(numericInput) && numericInput > 0) {
     G.globalSpeedFactor = 1000000;
