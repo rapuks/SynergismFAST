@@ -6004,7 +6004,7 @@ const tack = (dt: number) => {
   if (!G.timeWarp) {
     // Adds Resources (coins, ants, etc)
     const timeMult = calculateTimeAcceleration().mult
-    resourceGain(dt * timeMult * G.globalSpeedFactor)
+    resourceGain(dt * timeMult * 1000000)
     // Adds time (in milliseconds) to all reset functions, and quarks timer.
     addTimers('prestige', dt)
     addTimers('transcension', dt)
